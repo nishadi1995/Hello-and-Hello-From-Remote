@@ -1,0 +1,13 @@
+version: "3"
+services:
+  service_a-service:
+    build: .
+    ports:
+      - "8081:8000"
+    depends_on:
+      - service_b-service
+
+  service_b-service:
+    build: ../../service_B/service_B
+    ports:
+      - "8080:8080"
