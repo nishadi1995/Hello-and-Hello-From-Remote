@@ -21,7 +21,7 @@ public class HelloService {
     @RequestMapping("/hello_from_remote")
     public String helloFromRemote(){
 
-        String baseUrl = "http://192.168.99.100:8081/hello";
+        String baseUrl = "http://192.168.99.100:8000/hello";
 
         HttpHeaders headers = new HttpHeaders();
         headers.set("Accept", MediaType.APPLICATION_JSON_VALUE);
